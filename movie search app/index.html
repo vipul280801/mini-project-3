@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Search App</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <i class="fa-solid fa-film"></i>
+        <h2>Movie Search App</h2>
+      </div>
+    </header>
+
+    <section class="hero">
+      <h1>Find Your Favorite Movie</h1>
+      <p>Search any movie and get complete details instantly.</p>
+
+      <div class="search-box">
+        <input type="text" id="movieInput" placeholder="Enter Movie Name" />
+        <button id="searchBtn">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          Search
+        </button>
+      </div>
+    </section>
+    <section class="movie-section">
+      <img id="poster" src="images/home.png" alt="Movie Poster" />
+      <h2 id="title">Movie Name</h2>
+      <p id="year">Release Year</p>
+      <p id="rating">⭐ Rating</p>
+      <p id="genre">Genre</p>
+      <p id="plot">Movie Description</p>
+    </section>
+
+    <footer>
+      <p>Movie Data Powered by OMDb API</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

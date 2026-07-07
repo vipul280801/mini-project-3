@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Weather App</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <i class="fa-solid fa-cloud-sun"></i>
+
+        <h2>Weather App</h2>
+      </div>
+    </header>
+
+    <section class="hero">
+      <h1>Check Today's Weather</h1>
+      <p>Search any city and get live weather updates.</p>
+
+      <div class="search-box">
+        <input type="text" id="city" placeholder="Enter City Name" />
+
+        <button id="searchBtn">
+          <i class="fa-solid fa-magnifying-glass"></i>
+
+          Search
+        </button>
+      </div>
+    </section>
+    <section class="weather-section">
+      <img id="weatherIcon" src="images/weather.png" alt="Weather Icon" />
+
+      <h2 id="cityName">City Name</h2>
+
+      <h1 id="temperature">--°C</h1>
+
+      <p id="condition">Weather Condition</p>
+    </section>
+
+    <section class="weather-details">
+      <div class="card">
+        <i class="fa-solid fa-droplet"></i>
+        <h3>Humidity</h3>
+        <p id="humidity">--%</p>
+      </div>
+
+      <div class="card">
+        <i class="fa-solid fa-wind"></i>
+        <h3>Wind Speed</h3>
+
+        <p id="wind">-- m/s</p>
+      </div>
+    </section>
+    <footer>
+      <p>Weather Information Powered by OpenWeather API</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
